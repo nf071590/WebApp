@@ -2,7 +2,6 @@ const web_app_config = require("../config");
 import React, { Component, PropTypes } from "react";
 import { Link } from "react-router";
 import Headroom from "react-headroom";
-import LanguageSwitchNavigation from "../components/LanguageSwitchNavigation";
 import VoterStore from "../stores/VoterStore";
 
 export default class Header extends Component {

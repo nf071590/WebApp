@@ -43,7 +43,8 @@ export default class BallotItem extends Component {
 
   render () {
 
-    return <div className="ballot-item well well-skinny gutter-top--small">
+    const ballotItem =
+      <div className="ballot-item well well-skinny gutter-top--small">
 
         <div className="display-name">
           { this.props.ballot_item_display_name }
@@ -55,7 +56,8 @@ export default class BallotItem extends Component {
 
         { this.isMeasure() ? <Measure {...this.props} /> : <CandidateList children={this.getCandidates()}/> }
 
-
       </div>;
+
+    return ballotItem;
   }
 }
